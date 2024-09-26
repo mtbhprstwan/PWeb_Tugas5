@@ -1,0 +1,203 @@
+/* importing Google Fonts */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: 'Barlow', sans-serif;
+  }
+  
+  body{
+    margin:0;
+    background-color: #1A1616;
+  }
+  
+  section {
+    padding: 50px 10%;
+  }
+  
+  header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 10000;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 10%;
+    transition: 0.5s;
+    display: flex;
+    background-color: #1f1a1a;
+  }
+  
+  header.active {
+    background: var(--second-color);
+    box-shadow: 0 0 4px rgb(14 55 54 / 15%);
+  }
+  
+  .navbar {
+    display: flex;
+    padding: 1rem 0;
+    filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+  }
+  
+  .navbar a {
+    font-size: 1rem;
+    padding: 10px 20px;
+    color: white;
+    font-weight: 500;
+  }
+  
+  
+  #about {
+    background-image: url("https://gobiz.co.id/pusat-pengetahuan/wp-content/uploads/2019/03/usaha-warung-makan.jpg");
+    margin-bottom: 5rem;
+  }
+  
+  .home-text{
+    background-color: #1A1616;
+    padding: 1rem 2rem;
+  }
+  
+  .home {
+    width: 100%;
+    min-height: 50vh;
+    /* margin: auto; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .home h1{
+    font-size: 64px;
+    margin-bottom: 2rem;
+    color: white;
+  }
+  
+  .home-text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .description{
+    width: 75%;
+    margin-bottom: 2rem;
+    color: #f1f1f1;
+  }
+  
+  .card {
+    padding: 24px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    /* border: 2px solid black; */
+  }
+  
+  .cards_item {
+    display: grid;
+    grid-template: auto auto auto / auto;
+    grid-gap: 10px;
+  }
+  
+  .cards_item img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  .cards_item h4 {
+    color: white;
+    text-align: center;
+  }
+  
+  .cards_item h3 {
+    color: white;
+    text-align: center;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .container__card {
+    width: 100%;
+  }
+  
+  input[type='text'],
+  select,
+  textarea {
+    color:white;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  .container__form {
+    color:white;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 2rem 10rem;
+    margin-bottom: 10rem;
+  }
+  
+  /* CSS */
+  .button-submit {
+    background-color: #fff;
+    border: 1px solid #d5d9d9;
+    border-radius: 8px;
+    box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+    box-sizing: border-box;
+    color: #0f1111;
+    padding: 2rem 1rem;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Amazon Ember",sans-serif;
+    font-size: 13px;
+    line-height: 29px;
+    padding: 0 10px 0 11px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    width: 100px;
+  }
+  
+  .button-submit:hover {
+    background-color: #f7fafa;
+  }
+  
+  .button-submit:focus {
+    border-color: #008296;
+    box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+    outline: 0;
+  }
+  
+  @media (min-width: 768px) {
+    .grid__container {
+      display: grid;
+      grid-template: auto / auto auto auto;
+      grid-gap: 10px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .container__form {
+      border-radius: 5px;
+      background-color: #fff;
+      padding: 2rem;
+      margin-bottom: 10rem;
+    }
+  }
